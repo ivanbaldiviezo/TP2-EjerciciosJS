@@ -46,7 +46,7 @@ while (true) {
   if (cadena === null) {
     const confirmacion = confirm("¿Desea finalizar?");
     if (confirmacion) {
-      break; // El usuario ha pulsado 'cancelar' y confirmó salir, salir del bucle
+      break; //'cancelar', salir del bucle
     }
   }
   
