@@ -16,18 +16,15 @@ Input:  40773821        Output: 'L'
 */
 
 while (true) {
-    const dni = parseInt(prompt("Ingrese el número de DNI"));
-  
-    if (!isNaN(dni) && dni >= 0 && dni <= 99999999) {
-      const letras = "TRWAGMYFPDXBNJZSQVHLCKE";
-      const resto = dni % 23;
-      const letra = letras.charAt(resto);
-  
-      alert(`La letra del DNI ${dni} es: ${letra}`);
-    } else {
-      alert(
-        "No es un número de DNI válido. Inténte de nuevo."
-      );
-    }
+  const dni = parseInt(prompt("Ingrese el número de DNI"));
+
+  if (!isNaN(dni) && dni >= 0 && dni <= 99999999) {
+    const letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+    const resto = dni % 23;
+    const letra = letras.charAt(resto);
+
+    alert(`La letra del DNI ${dni} es: ${letra}`);
+  } else {
+    alert("No es un número de DNI válido. Inténte de nuevo.");
   }
-  
+}

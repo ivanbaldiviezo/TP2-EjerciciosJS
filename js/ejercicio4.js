@@ -5,18 +5,22 @@ Realiza un script que pida números hasta que se pulse “cancelar”. Si no es 
 let sumaTotal = 0;
 
 while (true) {
-  const entrada = prompt("Ingrese un número (o pulse 'cancelar' para finalizar):");
-  
+  const entrada = prompt(
+    "Ingrese un número (o pulse 'cancelar' para finalizar):"
+  );
+
   if (entrada === null) {
     break; // 'cancelar', salir del bucle
   }
-  
+
   const numero = parseFloat(entrada);
 
   if (!isNaN(numero)) {
     sumaTotal += numero;
   } else {
-    alert("Lo que ingresó no es un número válido. Por favor, ingrese un número.");
+    alert(
+      "Lo que ingresó no es un número válido. Por favor, ingrese un número."
+    );
   }
 }
 

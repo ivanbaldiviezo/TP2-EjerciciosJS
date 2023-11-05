@@ -42,14 +42,14 @@ let cadenasConcatenadas = "";
 
 while (true) {
   const cadena = prompt("Ingrese una cadena de texto");
-  
+
   if (cadena === null) {
     const confirmacion = confirm("¿Desea finalizar?");
     if (confirmacion) {
       break; //'cancelar', salir del bucle
     }
   }
-  
+
   if (cadena !== null) {
     if (cadenasConcatenadas !== "") {
       cadenasConcatenadas += "-";

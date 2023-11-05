@@ -10,9 +10,9 @@
 */
 
 for (let i = 1; i <= 30; i++) {
-    let linea = "";
-    for (let b = 1; b <= i; b++) {
-      linea += i;
-    }
-    document.write(linea +'<br>');
+  let linea = "";
+  for (let b = 1; b <= i; b++) {
+    linea += i;
   }
+  document.write(linea + "<br>");
+}

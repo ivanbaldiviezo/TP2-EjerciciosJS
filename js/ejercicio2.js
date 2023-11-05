@@ -11,7 +11,6 @@ Si ingreso un número que no esté dentro del rango de 0 a 10 mostrar un mensaje
 
 */
 
-
 // Solicitar una nota al usuario
 const entrada = prompt("Por favor, ingrese una nota (número del 0 al 10):");
 
